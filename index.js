@@ -11,6 +11,6 @@ bot.get('followers/list', {screen_name: 'anwarshahriar'}, function (err, data, r
     if (err) {
         console.log(err);
     } else {
-        console.log(data);
+        data.users.forEach(user => console.log(user.screen_name));
     }
 });
