@@ -7,7 +7,7 @@ var bot = new Twit({
     timeout_ms: 60*1000 // 1 minute timeout
 })
 
-bot.get('followers/ids', {screen_name: 'anwarshahriar'}, function (err, data, response) {
+bot.get('followers/list', {screen_name: 'anwarshahriar'}, function (err, data, response) {
     if (err) {
         console.log(err);
     } else {
